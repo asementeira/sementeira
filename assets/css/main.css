@@ -6,6 +6,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+#poemas1 {	border: solid 2px #ffffff;
+box-shadow: none;}
+#contact {	border: solid 2px #ffffff;
+	box-shadow: none;}
+/* #ul2 {display:none !important; } */
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -28,6 +35,8 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+
 
 body {
 	line-height: 1;
@@ -1000,6 +1009,8 @@ input, select, textarea {
 
 /* Button */
 
+
+button
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -1274,7 +1285,6 @@ input, select, textarea {
 		}
 
 			#header > *:before {
-				content: '';
 				display: block;
 				position: absolute;
 				top: calc(-3.5rem - 1px);
@@ -1391,7 +1401,7 @@ input, select, textarea {
 
 		#header nav.use-middle ul li.is-middle {
 			border-left: 0;
-		}
+		} 
 
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);

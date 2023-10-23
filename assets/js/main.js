@@ -4,6 +4,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+function myFunction() {
+	var x = document.getElementById("ul2");
+	if (x.style.display === "none") {
+	  x.style.display = "flex"; 
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+
+
 (function($) {
 
 	var	$window = $(window),
