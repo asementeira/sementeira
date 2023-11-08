@@ -27,8 +27,8 @@
 						
 						<nav id="nav">
 							<button onclick="myFunction()" id="poemas1">Melhores</button>
-				<button id="contact"><a href="#contact">Contactar</a></button> 
-						
+			<!-- <button onclick="contactar()" id="contact"<a class="acontact" href="#contact" >CONTACTAR</a>  </button>  -->
+			<input type="button" onclick="window.location.href='https://sementeira.ddns.net/#contact';" value="Contactar" />
                             <ul id="ul2" style="display: none;">
 								<li><a href="#meunome">O meu nome</a></li>
 								<li><a href="#cascata">Cascata</a></li>
@@ -487,7 +487,30 @@ Ou talvez, e se bem que o mesmo, <b>estivesse distraída, </b> <br>
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contactar</h2>
+								<h2 class="major">Newsletter</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Nome</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										
+				
+									</div>
+									<button id="contact">Subscrever Newsletter</button>  
+									
+
+											<!-- <li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li> -->
+								
+								</form>
+
+								<hr width="100%" color="#4f464e" size="15 px" />
+						  <h2 class="major">Contactar</h2>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">

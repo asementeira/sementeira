@@ -1,6 +1,10 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+.acontact {color: "green";
+}
+
+
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -8,10 +12,15 @@
 */
 #poemas1 {	border: solid 2px #ffffff;
 box-shadow: none;}
-#contact {	border: solid 2px #ffffff;
-	box-shadow: none;}
-/* #ul2 {display:none !important; } */
+/*#contact {	border: solid 2px #ffffff;
+	box-shadow: none;
+	text-decoration: none;
+	a {
+		text-decoration: none;
+ }
 
+} */
+/* #ul2 {display:none !important; } */
 
 
 html, body, div, span, applet, object,
