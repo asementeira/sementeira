@@ -79,46 +79,55 @@
 
 							<article id="subscrever" style="padding-bottom:0 px;">
 								<h2 class="major" style="margin-top:0px">Newsletter</h2>
-							
-							<form name="contact-form" style="box-sizing: inherit;" method="post" action="
-							https://script.google.com/macros/s/AKfycbzj_1GGnIggi4uzdd6eyn_drUfnipnhKI75JT4mn5jJrS-oTqIm0fGwJW91CiXZHjeiOQ/exec">
+							<label style="font-size: small; text-transform: none;">Fica a par dos meus novos poemas!</label>
+							<form name="submit-to-google-sheet" style="box-sizing: inherit;" method="post" id="formnewsletter ">
 
-								<div class="fields">
-									<div class="field half">
-								<input name="name" type="text" placeholder="Nome" required> 
-							</div>
+							<div class="fields"> 
 								<div class="field half">
-									<input name="email" type="email" placeholder="Email" required>
-								 </div>	
+									
+								<input name="name" type="text" placeholder="Nome" required> 
+								</div>  
+							<div class="field half">
+									<input name="email" type="email" placeholder="Email" required >
+								 </div>	 
+							</div> 
+<div id="subscreverdiv">
+							<button type="submit" id="botaonewsletter" style="justify-content:center; color:black;";>Subscrever</button> 
+							<label id="obrigada" style="display:none; margin-top: 2%;">Obrigada por subscreveres!</label>
 							</div>
-
-							<div id="subscreverdiv">
-								<button type="submit" id="botaonewsletter" style="justify-content:center;    color:black;";>Subscrever</button> 
-							</div>
-
 							</form>    
 
+<!--
+	$("#obrigada").show()
+-->
+							<script>
 
-							
-				
+								const scriptURL = 'https://script.google.com/macros/s/AKfycbz8wJ0KGzl7pb_zRDgZWfop8H49ImW0wpFDf8Sps5XLD6d2PyYcInINecc0XY9ipwu9Wg/exec'
+								const form = document.forms['submit-to-google-sheet']
+								form.addEventListener('submit', e => {
+    e.preventDefault()
+	obrigada()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 
-<!--	<form name="submit-to-google-sheet" style="box-sizing: inherit;">
-									<div class="fields">
-										<div class="field half">
-									<input name="newslettername" type="text" placeholder="Nome" required> 
-								</div>
-									<div class="field half">
-										<input name="email" type="email" placeholder="Email" required>
-									 </div>	
-								</div>
+  function obrigada() {
+	$("#obrigada").show();
+	setTimeout(() => {
+  const obrigada = document.getElementById('obrigada');
 
-								<div id="subscreverdiv">
-									<button type="submit" id="botaonewsletter" style="justify-content:center;    color:black;";>Subscrever</button> 
-								</div>
+  // 👇️ removes element from DOM
+  obrigada.style.display = 'none';
 
-								</form>      
-							
-							--> 
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 3000);
+
+}
+
+							  </script>
+
 
 								
 
@@ -888,7 +897,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Scripts -->
 		
-		<script src="Google Sheet.js"></script>
+	<!--	<script src="Google Sheet.js"></script> -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
