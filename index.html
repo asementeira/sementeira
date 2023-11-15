@@ -79,7 +79,30 @@
 
 							<article id="subscrever" style="padding-bottom:0 px;">
 								<h2 class="major" style="margin-top:0px">Newsletter</h2>
-								<form name="submit-to-google-sheet" style="box-sizing: inherit;">
+							
+							<form name="contact-form" style="box-sizing: inherit;" method="post" action="
+							https://script.google.com/macros/s/AKfycbzj_1GGnIggi4uzdd6eyn_drUfnipnhKI75JT4mn5jJrS-oTqIm0fGwJW91CiXZHjeiOQ/exec">
+
+								<div class="fields">
+									<div class="field half">
+								<input name="name" type="text" placeholder="Nome" required> 
+							</div>
+								<div class="field half">
+									<input name="email" type="email" placeholder="Email" required>
+								 </div>	
+							</div>
+
+							<div id="subscreverdiv">
+								<button type="submit" id="botaonewsletter" style="justify-content:center;    color:black;";>Subscrever</button> 
+							</div>
+
+							</form>    
+
+
+							
+				
+
+<!--	<form name="submit-to-google-sheet" style="box-sizing: inherit;">
 									<div class="fields">
 										<div class="field half">
 									<input name="newslettername" type="text" placeholder="Nome" required> 
@@ -93,19 +116,11 @@
 									<button type="submit" id="botaonewsletter" style="justify-content:center;    color:black;";>Subscrever</button> 
 								</div>
 
-								</form>
-								  
-								  <script>
-									const scriptURL = '<SCRIPT URL>'
-									const form = document.forms['submit-to-google-sheet']
-								  
-									form.addEventListener('submit', e => {
-									  e.preventDefault()
-									  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-										.then(response => console.log('Success!', response))
-										.catch(error => console.error('Error!', error.message))
-									})
-								  </script>
+								</form>      
+							
+							--> 
+
+								
 
 									<hr width="100%" color="#4f464e" size="7 px" />
 						  <h2 class="major">Contactar</h2>
@@ -872,6 +887,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+		
+		<script src="Google Sheet.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
