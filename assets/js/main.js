@@ -12,6 +12,10 @@ function myFunction() {
 	} else {
 	  x.style.display = "none";
 	}
+	/*
+	$("#botaocontactar").hide();
+	$("#botaosobre").hide();*/
+	$('.hidden').toggle(); 
   }
   
 
