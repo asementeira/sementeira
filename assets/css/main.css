@@ -1066,7 +1066,7 @@ button
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
-		border: 0;
+		border: solid 1px white;
 		box-shadow: inset 0 0 0 1px #ffffff;
 		color: #ffffff;
 		cursor: pointer;
@@ -1135,6 +1135,7 @@ button
 			color: white;
 			font-weight: 400;
 			border-radius: 4px;
+		border:	solid 1px white;
 			text-transform: uppercase;
 			padding: 0 1.25rem 0 1.35rem;
 			letter-spacing: 0.2rem;

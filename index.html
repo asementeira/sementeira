@@ -102,13 +102,13 @@
 -->
 							<script>
 
-								const scriptURL = 'https://script.google.com/macros/s/AKfycbz8wJ0KGzl7pb_zRDgZWfop8H49ImW0wpFDf8Sps5XLD6d2PyYcInINecc0XY9ipwu9Wg/exec'
+								const scriptURL = 'https://script.google.com/macros/s/AKfycbxfrD-YP9vxImFVw69fy22OdV7b2hUoI42GRgDzN5-HoDXtElzrL-K3PqUbiLGJuBGLJA/exec'
 								const form = document.forms['submit-to-google-sheet']
 								form.addEventListener('submit', e => {
     e.preventDefault()
 	obrigada()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => alert("Hello! I am an alert box!!"))
       .catch(error => console.error('Error!', error.message))
   })
 
