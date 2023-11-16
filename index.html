@@ -108,7 +108,7 @@
     e.preventDefault()
 	obrigada()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => alert("Hello! I am an alert box!!"))
+      .then(response => console.error('Success', success.message))
       .catch(error => console.error('Error!', error.message))
   })
 
