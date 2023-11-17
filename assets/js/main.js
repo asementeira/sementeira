@@ -9,7 +9,25 @@ function myFunction() {
 	var x = document.getElementById("ul2");
 	if (x.style.display === "none") {
 	  x.style.display = "flex"; 
+	  $("#curtos").hide();
+
+	  if (x.style.display === "flex") {
+		
+
+	  $('html').click(function(e) {   
+
+		if( !$(e.target).hasClass('lipoemas') )
+		{ 	$("#curtos").show();
+			$(".hidden").show();
+			 x.style.display = "none";
+		}
+		});     
+
+	}
+
+
 	} else {
+		$("#curtos").show();
 	  x.style.display = "none";
 	}
 	/*
@@ -17,8 +35,11 @@ function myFunction() {
 	$("#botaosobre").hide();*/
 	$('.hidden').toggle(); 
   }
-  
 
+
+
+
+	
 
 (function($) {
 
