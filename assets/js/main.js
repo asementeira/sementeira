@@ -1,8 +1,39 @@
+
+
 /*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+$('html').click(function(e) {   
+	var x = document.getElementById("ul2");
+	if( !$(e.target).hasClass('lipoemas') )
+	{ if(x.style.display === "flex") {
+		console.log("Hello world!");
+		$("#curtos").show();
+		$(".hidden").show();
+		 x.style.display = "none";
+		}
+	
+	}
+	})
+
+
 */
+
+
+$('html').click(function(e) {   
+	var x = document.getElementById("ul2");
+	if( !$(e.target).hasClass('lipoemas') )
+	{ if(x.style.display === "flex") {
+		console.log("Hello world!");
+		$("#curtos").show();
+		$(".hidden").show();
+		 x.style.display = "none";
+		}
+	
+	}
+
+	})
+
+
 
 
 function myFunction() {
@@ -10,33 +41,63 @@ function myFunction() {
 	if (x.style.display === "none") {
 	  x.style.display = "flex"; 
 	  $("#curtos").hide();
-
-	  if (x.style.display === "flex") {
+	  $("#botaocontactar").hide();
+	  $("#botaosobre").hide();
 		
 
-	  $('html').click(function(e) {   
+	
+}                
 
-		if( !$(e.target).hasClass('lipoemas') )
-		{ 	$("#curtos").show();
-			$(".hidden").show();
-			 x.style.display = "none";
-		}
-		});     
-
-	}
-
-
-	} else {
+	
+	else {
 		$("#curtos").show();
+		$(".hidden").show();
 	  x.style.display = "none";
 	}
 	/*
 	$("#botaocontactar").hide();
 	$("#botaosobre").hide();*/
-	$('.hidden').toggle(); 
   }
 
 
+
+  /* FUNÇAO DOS CURTOS ABAIXO */
+
+  function myCurtos() {
+	var x = document.getElementById("ul3");
+	if (x.style.display === "none") {
+	  x.style.display = "flex"; 
+	  $("#poemas1").hide();
+	  $("#botaocontactar").hide();
+	  $("#botaosobre").hide();
+	  $(".hidden").hide();
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+	
+	
+	
+	
+	
+	else {
+		$("#poemas1").show();
+		$("#botaocontactar").show();
+		$("#botaosobre").show();
+	  x.style.display = "none";} 
+
+	
+	}
+	
 
 
 	
