@@ -18,6 +18,26 @@ $('html').click(function(e) {
 
 */
 
+/*
+
+var body = document.getElementById('html');
+var except = document.getElementById('lipoemas');
+var x = document.getElementById("ul2");
+
+body.addEventListener("click", function () {
+    alert("wrapper");
+}, false);
+except.addEventListener("click", function (ev) {
+    alert("except");
+    ev.stopPropagation(); //this is important! If removed, you'll get both alerts
+}, false);
+
+
+*/
+
+
+
+/*         FUNÇAO CORRETA QUE DÁ   
 
 $('html').click(function(e) {   
 	var x = document.getElementById("ul2");
@@ -31,7 +51,12 @@ $('html').click(function(e) {
 	
 	}
 
-	})
+	})   */
+
+
+	
+
+
 
 
 
@@ -43,13 +68,28 @@ function myFunction() {
 	  $("#curtos").hide();
 	  $("#botaocontactar").hide();
 	  $("#botaosobre").hide();
+	
+	  $('html').click(function(e) {   
+		var x = document.getElementById("ul2");
+	
+		if( !$(e.target).hasClass('lipoemas') )
+		{ if(x.style.display === "flex") {
+			console.log("Hello world!");
+			$("#curtos").show();
+			$(".hidden").show();
+			 x.style.display = "none";
+			 e.stopPropagation
+			}
 		
+		}
+	}); 
 
 	
 }                
 
 	
 	else {
+
 		$("#curtos").show();
 		$(".hidden").show();
 	  x.style.display = "none";
@@ -64,6 +104,7 @@ function myFunction() {
   /* FUNÇAO DOS CURTOS ABAIXO */
 
   function myCurtos() {
+	
 	var x = document.getElementById("ul3");
 	if (x.style.display === "none") {
 	  x.style.display = "flex"; 
@@ -72,31 +113,39 @@ function myFunction() {
 	  $("#botaosobre").hide();
 	  $(".hidden").hide();
 
+	  $('html').click(function(e) {   
+		var y = document.getElementById("ul3");
+	
+		if( !$(e.target).hasClass('lipoemascurtos') )
+		{ if(y.style.display === "flex") {
+			console.log("susanaboa!");
+			$("#poemas1").show();
+			$(".hidden").show();
+			 y.style.display = "none";
+			 e.stopPropagation
+			}
+		
+		}
+	});
 
-
-
-
-
-
-
-
-
-
-
+	
 	}
-	
-	
-	
-	
-	
+
+
 	else {
 		$("#poemas1").show();
 		$("#botaocontactar").show();
 		$("#botaosobre").show();
-	  x.style.display = "none";} 
+	  x.style.display = "none"; 
+
+			} 
+			
+
+			} 
+		
 
 	
-	}
+
 	
 
 
