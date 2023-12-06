@@ -66,6 +66,7 @@ function myFunction() {
 	if (x.style.display === "none") {
 	  x.style.display = "flex"; 
 	  $("#curtos").hide();
+	  $("#longos").hide();
 	  $("#botaocontactar").hide();
 	  $("#botaosobre").hide();
 	
@@ -76,6 +77,7 @@ function myFunction() {
 		{ if(x.style.display === "flex") {
 			console.log("Hello world!");
 			$("#curtos").show();
+			$("#longos").show();
 			$(".hidden").show();
 			 x.style.display = "none";
 			 e.stopPropagation
@@ -92,6 +94,7 @@ function myFunction() {
 
 		$("#curtos").show();
 		$(".hidden").show();
+		$("#longos").show();
 	  x.style.display = "none";
 	}
 	/*
@@ -109,6 +112,7 @@ function myFunction() {
 	if (x.style.display === "none") {
 	  x.style.display = "flex"; 
 	  $("#poemas1").hide();
+	  $("#longos").hide();
 	  $("#botaocontactar").hide();
 	  $("#botaosobre").hide();
 	  $(".hidden").hide();
@@ -120,6 +124,7 @@ function myFunction() {
 		{ if(y.style.display === "flex") {
 			console.log("susanaboa!");
 			$("#poemas1").show();
+			$("#longos").show();
 			$(".hidden").show();
 			 y.style.display = "none";
 			 e.stopPropagation
@@ -136,6 +141,7 @@ function myFunction() {
 		$("#poemas1").show();
 		$("#botaocontactar").show();
 		$("#botaosobre").show();
+		$("#longos").show();
 	  x.style.display = "none"; 
 
 			} 
@@ -147,6 +153,49 @@ function myFunction() {
 	
 
 	
+			function myLongos() {
+	
+				var x = document.getElementById("ul4");
+				if (x.style.display === "none") {
+				  x.style.display = "flex"; 
+				  $("#poemas1").hide();
+				  $("#curtos").hide();
+				  $("#botaocontactar").hide();
+				  $("#botaosobre").hide();
+				  $(".hidden").hide();
+			
+				  $('html').click(function(e) {   
+					var y = document.getElementById("ul4");
+				
+					if( !$(e.target).hasClass('lipoemaslongos') )
+					{ if(y.style.display === "flex") {
+						console.log("susanaboa!");
+						$("#poemas1").show();
+						$("#curtos").show();
+						$(".hidden").show();
+						 y.style.display = "none";
+						 e.stopPropagation
+						}
+					
+					}
+				});
+			
+				
+				}
+			
+			
+				else {
+					$("#poemas1").show();
+					$("#botaocontactar").show();
+					$("#botaosobre").show();
+					$("#curtos").show();
+				  x.style.display = "none"; 
+			
+						} 
+						
+			
+						} 
+					
 
 
 	
