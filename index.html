@@ -42,57 +42,70 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Sementeira</h1>
-								<p> Poesia </p>
+								<p> Poesia & Recoleção de Plantas </p>
 							</div>
 						</div>
 						
 						<nav id="nav">
-							<button onclick="myFunction()" id="poemas1" class="lipoemas">Seleção</button>
-							
-                            <ul id="ul2"style="display: none;">
-								<li class="lipoemas"><a class="lipoemas" href="#raizes">Raízes</a></li>
-								<li class="lipoemas"><a class="lipoemas" href="#solo">Solo</a></li>
-								<li class="lipoemas"><a class="lipoemas" href="#cascata">Cascata</a></li>
-								<li class="lipoemas"><a class="lipoemas"  href="#cabra">A cabra</a></li>
-								<li class="lipoemas"><a class="lipoemas" href="#agaivota">A Gaivota</a></li>
-								<li class="lipoemas"><a class="lipoemas" href="#frio">Frio</a></li>
-								<li class="lipoemas"><a class="lipoemas" href="#compostagem">Compostagem</a></li>
-			
-							
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-							<button onclick="myCurtos()" id="curtos" class="lipoemascurtos">Curtos</button>
-
-					<ul id="ul3" style="display: none;"> 
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#pevides">Pevides</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#daninha">Daninha</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#tudo">Tudo</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#amor">Amor</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#vela">Vela</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#porta">Porta</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#transicao">Transição</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#manifesto">Manifesto</a></li>
-						<li class="lipoemascurtos"><a class="lipoemascurtos" href="#completa">Completa</a></li>
+						
+						 <button id="botaopoesia" class="botaopoesia item hidden" onclick="showPoesia()">Poesia </button>
 				
-					<!--	<li class="lipoemascurtos"><a class="lipoemascurtos" href="#outro2">outro2</a></li> -->
-				
-					</ul>
-
-					<button onclick="myLongos()" id="longos" class="lipoemaslongos">Longos</button>
-					<ul id="ul4" style="display: none;"> 
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#ainda">Ainda</a></li>
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#osdias">Os dias</a></li>
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#meunome">O meu nome</a></li>
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#sensibilidade">Sensibilidade</a></li>
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#presol">Pré-Sol</a></li>
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#espirito">Espírito</a></li>
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#celula">Célula</a></li>
-						<li class="lipoemaslongos"><a class="lipoemaslongos" href="#mari">Mari</a></li>
-					</ul>
-
-
 					<button id="botaocontactar" class="item hidden" onclick="window.location.href='#subscrever';">Seguir </button>
 					<button id="botaosobre" class="item hidden" onclick="window.location.href='#sobre';">Sobre</button>
+					<!-- BOTAO PLANTAS ESCONDIDO PARA JÁ
+					<a href="recoleçao/index.html"> <button id="botaoplantas" class="item hidden" onclick="">Plantas</button> </a> -->
+			
+
+					<div id="abrirpoesia"   class="abrirpoesia"  style="display:none">
+						<button onclick="myFunction()" id="poemas1" class="lipoemas abrirpoemas" >Seleção</button>
+						<button onclick="myCurtos()" id="curtos" class="lipoemascurtos abrirpoemas" >Curtos</button>
+						<button onclick="myLongos()" id="longos" class="lipoemaslongos abrirpoemas" >Longos</button>
+					</div>
+
+
+					<ul id="ul2"style="display: none;">
+						<li class="lipoemas"><a class="lipoemas" href="#raizes">Raízes</a></li>
+						<li class="lipoemas"><a class="lipoemas" href="#solo">Solo</a></li>
+						<li class="lipoemas"><a class="lipoemas" href="#cascata">Cascata</a></li>
+						<li class="lipoemas"><a class="lipoemas"  href="#cabra">A cabra</a></li>
+						<li class="lipoemas"><a class="lipoemas" href="#agaivota">A Gaivota</a></li>
+						<li class="lipoemas"><a class="lipoemas" href="#frio">Frio</a></li>
+						<li class="lipoemas"><a class="lipoemas" href="#compostagem">Compostagem</a></li>
+	
+					
+						<!--<li><a href="#elements">Elements</a></li>-->
+					</ul>
+					
+
+			<ul id="ul3" style="display: none;"> 
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#pevides">Pevides</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#daninha">Daninha</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#tudo">Tudo</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#amor">Amor</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#vela">Vela</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#porta">Porta</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#transicao">Transição</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#manifesto">Manifesto</a></li>
+				<li class="lipoemascurtos"><a class="lipoemascurtos" href="#completa">Completa</a></li>
+		
+			<!--	<li class="lipoemascurtos"><a class="lipoemascurtos" href="#outro2">outro2</a></li> -->
+		
+			</ul>
+
+		
+			<ul id="ul4" style="display: none;"> 
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#ainda">Ainda</a></li>
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#osdias">Os dias</a></li>
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#meunome">O meu nome</a></li>
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#sensibilidade">Sensibilidade</a></li>
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#presol">Pré-Sol</a></li>
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#espirito">Espírito</a></li>
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#celula">Célula</a></li>
+				<li class="lipoemaslongos"><a class="lipoemaslongos" href="#mari">Mari</a></li>
+			</ul>
+
+
+
 						</nav>
 
 					</header>

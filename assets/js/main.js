@@ -54,10 +54,100 @@ $('html').click(function(e) {
 	})   */
 
 
+	/* ESTA É A FUNÇAO QUE DÁ
+	function showPoesia()
+
+	{ 	var x = document.getElementById("abrirpoesia");
+		
+		
+		if (x.style.display === "none") {
+		
+			x.style.display = "block";
+			$("#botaocontactar").hide();
+			$("#botaosobre").hide();
+			$("#botaopoesia").hide();
+			$("#botaoplantas").hide();
+			
+				}
+			}
+
+*/
+			$("#botaopoesia").on('click', function(){
+				$(".abrirpoesia").show();
+				/* Acrescentei estes 3 abaixo */
+				$("#curtos").show();
+				$("#longos").show();
+				$("#poemas1").show();
+				/* */
+				$("#botaocontactar").hide();
+				$("#botaosobre").hide();
+				$("#botaopoesia").hide();
+				$("#botaoplantas").hide();
+			  });
+			  
+			  $(document).click(function (e) {
+				if (!$(e.target).hasClass("botaopoesia") && !$(e.target).hasClass("abrirpoesia") && !$(e.target).hasClass("lipoemas") && !$(e.target).hasClass("lipoemascurtos") && !$(e.target).hasClass("lipoemaslongos") && $(e.target).closest(".abrirpoesia").length === 0) {
+			   
+				//if (!$(e.target).data("id") =="toggle-dropdown" && $(e.target).parents(".toggle-dropdown-content").length === 0) {
+					  $(".abrirpoesia").hide();
+					  $("#botaocontactar").show();
+					$("#botaoplantas").show();
+					$("#botaosobre").show();
+					$("#botaopoesia").show();
+					var x = document.getElementById("ul2");
+					var y = document.getElementById("ul3");
+					var w = document.getElementById("ul4");
+					x.style.display = "none";
+					y.style.display = "none";
+					w.style.display = "none";
+					document.getElementById("curtos").hide();
+				  }
+			  });
+
+		
+	
+	
 	
 
 
 
+/*
+$("#botaocontactar").hide();
+$("#botaosobre").hide();*/
+
+
+
+			/*
+			$('html').click(function(e) {   
+				var x = document.getElementById("abrirpoemas");
+			
+				if( !$(e.target).hasClass('abrirpoemas') )
+				{ if(x.style.display === "block") {
+					console.log("Hello world!");
+					$("#botaocontactar").show();
+					$("#botaoplantas").show();
+					$("#botaosobre").show();
+					 x.style.display = "none";
+					 e.stopPropagation
+					}
+				
+				}
+			}); 
+			
+		}                */
+		/*
+			
+			else {
+		
+				$("#botaocontactar").show();
+				$("#botaoplantas").show();
+				$("#botaosobre").show();
+			  x.style.display = "none";
+			
+		}
+
+	}
+*/
 
 
 
@@ -69,29 +159,16 @@ function myFunction() {
 	  $("#longos").hide();
 	  $("#botaocontactar").hide();
 	  $("#botaosobre").hide();
+	  $("#botaopoesia").hide();
+	  $("#botaoplantas").hide();
 	
-	  $('html').click(function(e) {   
-		var x = document.getElementById("ul2");
-	
-		if( !$(e.target).hasClass('lipoemas') )
-		{ if(x.style.display === "flex") {
-			console.log("Hello world!");
-			$("#curtos").show();
-			$("#longos").show();
-			$(".hidden").show();
-			 x.style.display = "none";
-			 e.stopPropagation
-			}
+
 		
 		}
-	}); 
-
-	
-}                
-
-	
+	 
 	else {
-
+		$(".abrirpoesia").hide();
+		$(".hidden").show();
 		$("#curtos").show();
 		$(".hidden").show();
 		$("#longos").show();
@@ -109,45 +186,28 @@ function myFunction() {
   function myCurtos() {
 	
 	var x = document.getElementById("ul3");
+	var y = document.getElementById("curtos");
 	if (x.style.display === "none") {
 	  x.style.display = "flex"; 
 	  $("#poemas1").hide();
 	  $("#longos").hide();
-	  $("#botaocontactar").hide();
-	  $("#botaosobre").hide();
-	  $(".hidden").hide();
 
-	  $('html').click(function(e) {   
-		var y = document.getElementById("ul3");
-	
-		if( !$(e.target).hasClass('lipoemascurtos') )
-		{ if(y.style.display === "flex") {
-			console.log("susanaboa!");
-			$("#poemas1").show();
-			$("#longos").show();
-			$(".hidden").show();
-			 y.style.display = "none";
-			 e.stopPropagation
 			}
 		
-		}
-	});
+		else {
+				x.style.display = "none";
+				$(".abrirpoesia").hide();
+					$(".hidden").show();
+					$("#poemas1").show();
+					$("#longos").show();
+			};
 
 	
-	}
-
-
-	else {
-		$("#poemas1").show();
-		$("#botaocontactar").show();
-		$("#botaosobre").show();
-		$("#longos").show();
-	  x.style.display = "none"; 
 
 			} 
+		
+
 			
-
-			} 
 		
 
 	
@@ -160,35 +220,17 @@ function myFunction() {
 				  x.style.display = "flex"; 
 				  $("#poemas1").hide();
 				  $("#curtos").hide();
-				  $("#botaocontactar").hide();
-				  $("#botaosobre").hide();
 				  $(".hidden").hide();
-			
-				  $('html').click(function(e) {   
-					var y = document.getElementById("ul4");
-				
-					if( !$(e.target).hasClass('lipoemaslongos') )
-					{ if(y.style.display === "flex") {
-						console.log("susanaboa!");
-						$("#poemas1").show();
-						$("#curtos").show();
-						$(".hidden").show();
-						 y.style.display = "none";
-						 e.stopPropagation
-						}
-					
-					}
-				});
-			
-				
+		
 				}
+				
 			
-			
+		
 				else {
-					$("#poemas1").show();
+					$(".abrirpoesia").hide();
+					$(".hidden").show();
 					$("#botaocontactar").show();
 					$("#botaosobre").show();
-					$("#curtos").show();
 				  x.style.display = "none"; 
 			
 						} 

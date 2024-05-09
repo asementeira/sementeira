@@ -9,7 +9,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
+.js-is-hidden {
+	display: none;
+}
 
 
 formnewsletter {	display: -moz-flex;
@@ -57,6 +59,12 @@ box-shadow: none;}
 
 	#botaosobre {border: solid 2px #ffffff;
 		box-shadow: none;}
+
+		#botaoplantas {border: solid 2px #ffffff;
+			box-shadow: none;}
+
+			#botaopoesia {border: solid 2px #ffffff;
+				box-shadow: none;}
 	
 
 html, body, div, span, applet, object,
