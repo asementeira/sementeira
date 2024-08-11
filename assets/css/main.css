@@ -33,7 +33,8 @@ box-shadow: none;
 }
 
 #visitar {border: solid 2px #ffffff;
-	box-shadow: none;}
+	box-shadow: none;
+display: flex;}
 
 #subscreverdiv {text-align: center;}
 
