@@ -1480,6 +1480,7 @@ button
 			-ms-filter: blur(0.1rem);
 			filter: blur(0.1rem);
 			opacity: 0;
+			
 		}
 
 		body.is-preload #header {
@@ -1630,12 +1631,16 @@ button
 			opacity: 0;
 		}
 
+		#article {opacity: 1
+		;}
+
 			#main article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				transform: translateY(0);
 				opacity: 1;
+				background-color: #1b1f22;
 			}
 
 			#main article .close {
