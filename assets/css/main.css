@@ -806,6 +806,9 @@ input, select, textarea {
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1em;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 		ul li {
@@ -1422,18 +1425,26 @@ button
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
 			border-radius: 4px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border: solid 1px #ffffff;
+				border-radius: 4px;
+				align-items: center;
 			}
 
 				#header nav ul li:first-child {
-					border-left: 0;
+					border: solid 1px #ffffff;
+					border-radius: 4px;
 				}
+
+				#header nav ul li:last-child {
+					border: solid 1px #ffffff;
+					border-radius: 4px;
+				}
+
 
 				#header nav ul li a {
 					display: block;
