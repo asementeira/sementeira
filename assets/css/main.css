@@ -821,7 +821,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px #ffffff;
+				border: solid 1px #ffffff;
 				padding: 0.5em 0;
 			}
 
@@ -1456,6 +1456,7 @@ button
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					border: solid 1px #ffffff;
 				}
 
 					#header nav ul li a:hover {
@@ -1572,11 +1573,11 @@ button
 
 					#header nav ul li {
 						border-left: 0;
-						border-top: solid 1px #ffffff;
+						border: solid 1px #ffffff;
 					}
 
 						#header nav ul li:first-child {
-							border-top: 0;
+							border: solid 1px #ffffff;
 						}
 
 						#header nav ul li a {
